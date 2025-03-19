@@ -160,9 +160,10 @@ nav {
 /* Hero Section */
 .hero {
     text-align: center;
-    padding: 4rem 2rem;
+    padding: 6rem 2rem 4rem;
     background: linear-gradient(135deg, var(--primary-color) 0%, #2C4A3E 100%);
     color: white;
+    min-height: auto;
 }
 
 .hero h1 {
@@ -173,6 +174,13 @@ nav {
 .hero h2 {
     font-size: 2rem;
     margin-bottom: 1.5rem;
+    opacity: 0.9;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto;
     opacity: 0.9;
 }
 
@@ -505,35 +513,48 @@ main {
 }
 
 @media (max-width: 768px) {
-    .nav-links {
-        display: none;
-    }
-    
-    .hamburger {
-        display: block;
-    }
-    
     .hero {
-        flex-direction: column;
-        padding: 120px 1.5rem 40px;
-        height: auto;
-        min-height: 100vh;
+        padding: 5rem 1rem 3rem;
     }
-    
-    .hero-content {
-        max-width: 100%;
-        padding: 0;
-        text-align: center;
-    }
-    
+
     .hero h1 {
         font-size: 2.5rem;
+        margin-bottom: 0.75rem;
     }
-    
+
     .hero h2 {
         font-size: 1.5rem;
+        margin-bottom: 1rem;
     }
-    
+
+    .hero p {
+        font-size: 1rem;
+        padding: 0 1rem;
+    }
+
+    main {
+        margin-top: 60px;
+    }
+
+    .nav-links {
+        display: flex;
+        gap: 1rem;
+    }
+
+    .nav-links a {
+        margin-left: 0;
+        font-size: 0.9rem;
+    }
+
+    .logo {
+        font-size: 1.2rem;
+    }
+
+    .logo-img {
+        width: 24px;
+        height: 24px;
+    }
+
     .stats {
         max-width: 100%;
         margin-left: auto;

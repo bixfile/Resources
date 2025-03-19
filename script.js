@@ -114,25 +114,22 @@ function initScrollAnimations() {
 function initMobileMenu() {
     const hamburger = document.querySelector('.hamburger');
     const navLinks = document.querySelector('.nav-links');
-    const links = document.querySelectorAll('.nav-links a');
+    const navLinksItems = document.querySelectorAll('.nav-links a');
     
-    hamburger.addEventListener('click', () => {
-        // Toggle menu
-        navLinks.classList.toggle('active');
-        hamburger.classList.toggle('active');
-        
-        // Animate hamburger
-        const spans = hamburger.querySelectorAll('span');
-        spans.forEach(span => span.classList.toggle('active'));
-    });
+    if (hamburger) {
+        hamburger.addEventListener('click', function() {
+            this.classList.toggle('active');
+            navLinks.classList.toggle('active');
+            document.body.style.overflow = navLinks.classList.contains('active') ? 'hidden' : '';
+        });
+    }
     
-    // Close menu when clicking links
-    links.forEach(link => {
+    // Close mobile menu when clicking a link
+    navLinksItems.forEach(link => {
         link.addEventListener('click', () => {
-            navLinks.classList.remove('active');
             hamburger.classList.remove('active');
-            const spans = hamburger.querySelectorAll('span');
-            spans.forEach(span => span.classList.remove('active'));
+            navLinks.classList.remove('active');
+            document.body.style.overflow = '';
         });
     });
 }

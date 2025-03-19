@@ -1,119 +1,59 @@
-# ReSource Landing Page
+# ReSource - Berkeley's Smart Recycling App
 
-Welcome to ReSource - Smart Recycling Made Simple
-
-## About
-ReSource is an AI-powered guide to responsible disposal in Berkeley. This landing page showcases our upcoming mobile application that helps users find the right way to recycle any item and schedule pickups effortlessly.
+A modern, user-friendly web application designed to simplify recycling in Berkeley. This landing page showcases the key features and benefits of the ReSource app.
 
 ## Features
-- Smart item search for recycling guidance
-- Easy scheduling for pickups
-- Drop-off location finder
-- Impact tracking
 
-## Website
-Visit our landing page: [ReSource](https://bixfile.github.io/resource-landing)
+- **Smart Recycling Management**: Easy search and management of recycling items
+- **Flexible Pickup Options**: Choose between scheduled pickups or drop-off locations
+- **Instant Confirmation**: Get immediate confirmation of your recycling requests
+- **User-Friendly Interface**: Clean, intuitive design for seamless navigation
+
+## Pricing Plans
+
+- **Basic Plan**: FREE - 1 free pickup per month
+- **Premium Plan**: $3.99/mo - 5 free pickups per month
+- **Annual Plan**: $29.99/yr - 37% savings + premium features
+
+## Launch Information
+
+🚀 Launching March 2025 - Reserve your spot now!
 
 ## Live Demo
+
 The website is live at: https://bixfile.github.io/resource-landing
 
-## Contact
-Join our waitlist to get early access and updates!
+## Social Media
+
+- Instagram: [@resource.berkeley](https://www.instagram.com/resource.berkeley/)
+
+## Partners
+
+- City of Berkeley
+- UC Berkeley
+- Urban Ore
+- Berkeley Transfer Station
+
+## Pre-Registration
+
+Interested in being among the first to use ReSource? Pre-register now through our [Google Form](https://forms.gle/bmajfKZC2CzwqWSE8).
 
 ## Technologies Used
 
 - HTML5
-- CSS3 (with CSS Variables and Flexbox/Grid)
-- JavaScript (ES6+)
+- CSS3
+- JavaScript
 - Font Awesome Icons
 - Google Fonts (Inter)
 
-## Setup Instructions
+## Development
 
-1. Clone the repository:
-```bash
-git clone [repository-url]
-cd resource-landing-page
-```
+To run this project locally:
 
-2. Replace the Font Awesome kit URL in `index.html` with your own kit URL:
-```html
-<script src="https://kit.fontawesome.com/your-font-awesome-kit.js" crossorigin="anonymous"></script>
-```
-
-3. Add your hero image:
-- Place your hero image in the `assets` folder
-- Update the image source in `index.html` if needed
-
-4. Serve the files using a local server. You can use Python's built-in server:
-```bash
-python -m http.server 8000
-```
-
-5. Open your browser and navigate to:
-```
-http://localhost:8000
-```
-
-## Project Structure
-
-```
-resource-landing-page/
-├── index.html          # Main HTML file
-├── styles.css          # CSS styles
-├── script.js           # JavaScript functionality
-├── assets/            # Images and other assets
-└── README.md          # Project documentation
-```
-
-## Customization
-
-### Colors
-The color scheme can be customized by modifying the CSS variables in `styles.css`:
-```css
-:root {
-    --primary-color: #2E7D32;
-    --primary-light: #4CAF50;
-    --primary-dark: #1B5E20;
-    --secondary-color: #81C784;
-    --text-color: #333333;
-    --light-gray: #F5F5F5;
-    --white: #FFFFFF;
-}
-```
-
-### Content
-- Update the text content in `index.html`
-- Modify the features and benefits sections to match your app's offerings
-- Update the partner list in the footer
-
-### Waitlist Form
-The waitlist form currently shows a success message. To connect it to a backend:
-1. Modify the form submission handler in `script.js`
-2. Add your backend API endpoint
-3. Implement proper error handling
-
-## Browser Support
-
-The landing page is compatible with:
-- Chrome (latest)
-- Firefox (latest)
-- Safari (latest)
-- Edge (latest)
-- Mobile browsers (iOS Safari, Android Chrome)
-
-## Contributing
-
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
+1. Clone the repository
+2. Open `index.html` in your web browser
+3. No additional setup required - it's a static website
 
 ## License
 
-This project is licensed under the MIT License - see the LICENSE file for details.
-
-## Contact
-
-For questions or support, please contact [your-email@example.com] 
+© 2025 ReSource. All rights reserved. 

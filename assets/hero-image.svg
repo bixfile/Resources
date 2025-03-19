@@ -1,0 +1,28 @@
+<svg width="360" height="640" viewBox="0 0 360 640" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <!-- Phone Frame -->
+    <rect width="360" height="640" rx="32" fill="#F5F5F5"/>
+    <rect x="16" y="16" width="328" height="608" rx="24" fill="white"/>
+    
+    <!-- Status Bar -->
+    <rect x="32" y="32" width="296" height="32" rx="16" fill="#F5F5F5"/>
+    
+    <!-- Search Bar -->
+    <rect x="32" y="80" width="296" height="48" rx="24" fill="#F5F5F5"/>
+    <circle cx="64" cy="104" r="12" fill="#D87D5F"/>
+    
+    <!-- Stats Cards -->
+    <rect x="32" y="144" width="140" height="80" rx="16" fill="#2F4F44"/>
+    <rect x="188" y="144" width="140" height="80" rx="16" fill="#2F4F44"/>
+    
+    <!-- Category Grid -->
+    <rect x="32" y="240" width="140" height="140" rx="16" fill="#F5F5F5"/>
+    <rect x="188" y="240" width="140" height="140" rx="16" fill="#F5F5F5"/>
+    <rect x="32" y="396" width="140" height="140" rx="16" fill="#F5F5F5"/>
+    <rect x="188" y="396" width="140" height="140" rx="16" fill="#F5F5F5"/>
+    
+    <!-- Bottom Navigation -->
+    <rect x="32" y="568" width="296" height="40" rx="20" fill="#F5F5F5"/>
+    <circle cx="72" cy="588" r="12" fill="#D87D5F"/>
+    <circle cx="180" cy="588" r="12" fill="#2F4F44"/>
+    <circle cx="288" cy="588" r="12" fill="#2F4F44"/>
+</svg> 

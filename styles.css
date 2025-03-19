@@ -300,18 +300,20 @@ nav {
 .pre-order-button {
     display: inline-block;
     background-color: white;
-    color: var(--secondary-color);
+    color: var(--secondary-color) !important;
     padding: 1rem 2rem;
     border-radius: 30px;
     text-decoration: none;
     font-weight: bold;
     margin: 2rem 0;
     transition: var(--transition);
+    font-size: 1.1rem;
 }
 
 .pre-order-button:hover {
     transform: translateY(-2px);
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    background-color: var(--white);
 }
 
 .hashtags {

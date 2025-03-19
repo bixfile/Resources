@@ -11,6 +11,71 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Initialize forms
     initForms();
+
+    // Handle smooth scrolling for navigation links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            const target = document.querySelector(this.getAttribute('href'));
+            if (target) {
+                target.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            }
+        });
+    });
+
+    // Handle video playback
+    const video = document.querySelector('video');
+    if (video) {
+        // Ensure video starts playing when it comes into view
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    video.play();
+                } else {
+                    video.pause();
+                }
+            });
+        }, { threshold: 0.5 });
+        
+        observer.observe(video);
+
+        // Handle video loading error
+        video.addEventListener('error', () => {
+            video.style.display = 'none';
+            video.parentElement.innerHTML = '<p>Video preview currently unavailable</p>';
+        });
+    }
+
+    // Add animation to feature cards
+    const cards = document.querySelectorAll('.feature-card');
+    const observerCards = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.style.opacity = '1';
+                entry.target.style.transform = 'translateY(0)';
+            }
+        });
+    }, { threshold: 0.1 });
+
+    cards.forEach(card => {
+        card.style.opacity = '0';
+        card.style.transform = 'translateY(20px)';
+        card.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+        observerCards.observe(card);
+    });
+
+    // Handle pre-order button click
+    const preOrderButton = document.querySelector('.pre-order-button');
+    if (preOrderButton) {
+        preOrderButton.addEventListener('click', function(e) {
+            // Update this URL with your actual Google Form link
+            const googleFormUrl = 'https://forms.gle/your-google-form-link';
+            window.open(googleFormUrl, '_blank');
+        });
+    }
 });
 
 // Scroll Animations

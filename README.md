@@ -21,7 +21,7 @@ A modern, user-friendly web application designed to simplify recycling in Berkel
 
 ## Live Demo
 
-The website is live at: https://bixfile.github.io/resource-landing
+The website is live at: https://bixfile.github.io/Resources/
 
 ## Social Media
 

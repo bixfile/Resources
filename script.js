@@ -66,16 +66,6 @@ document.addEventListener('DOMContentLoaded', function() {
         card.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
         observerCards.observe(card);
     });
-
-    // Handle pre-order button click
-    const preOrderButton = document.querySelector('.pre-order-button');
-    if (preOrderButton) {
-        preOrderButton.addEventListener('click', function(e) {
-            // Update this URL with your actual Google Form link
-            const googleFormUrl = 'https://forms.gle/your-google-form-link';
-            window.open(googleFormUrl, '_blank');
-        });
-    }
 });
 
 // Scroll Animations
